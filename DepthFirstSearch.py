@@ -8,8 +8,7 @@ class Vertex:
 		self.color = 'black'
 	
 	def add_neighbor(self, v):
-		nset = set(self.neighbors)
-		if v not in nset:
+		if v not in self.neighbors:
 			self.neighbors.append(v)
 			self.neighbors.sort()
 
