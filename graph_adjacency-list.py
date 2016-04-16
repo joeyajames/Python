@@ -1,3 +1,4 @@
+# implementation of an undirected graph using Adjacency Lists
 class Vertex:
 	def __init__(self, n):
 		self.name = n
@@ -20,11 +21,9 @@ class Graph:
 	
 	def add_edge(self, u, v):
 		if u in self.vertices and v in self.vertices:
-			for key, value in self.vertices.items():
-				if key == u:
-					value.add_neighbor(v)
-				if key == v:
-					value.add_neighbor(u)
+			# my YouTube video shows a silly for loop here, but this is a much faster way to do it
+			self.vertices[u].add_neighbor(v)
+			self.vertices[v].add_neighbor(u)
 			return True
 		else:
 			return False
