@@ -118,14 +118,12 @@ def quick_sort2(A, low, hi):
 	
 def get_pivot(A, low, hi):
 	mid = (hi + low) // 2
-	pivot = hi
-	if low < mid:
-		if mid < hi:
-			pivot = mid
-	elif low < hi:
-		pivot = low
-	
-	return pivot
+	s = sorted([A[low], A[mid], A[hi]])
+	if s[1] == A[low]:
+		return low
+	elif s[1] == A[mid]:
+		return mid
+	return hi
 	
 def partition(A, low, hi):
 	pivotIndex = get_pivot(A, low, hi)
