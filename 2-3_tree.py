@@ -29,8 +29,6 @@ class Node:
 		self.child.extend(new_node.child)
 		if len(self.child) > 1:
 			self.child.sort()
-			for child in self.child:
-				child.parent = self
 		if len(self.data) > 2:
 			self._split()
 	

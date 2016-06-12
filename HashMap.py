@@ -43,6 +43,7 @@ class HashMap:
 			if self.map[key_hash][i][0] == key:
 				self.map[key_hash].pop(i)
 				return True
+		return False
 			
 	def print(self):
 		print('---PHONEBOOK----')
