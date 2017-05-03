@@ -2,7 +2,7 @@
 
 import sys
 	
-def merge_sort(A, first=0, last=len(A)-1):
+def merge_sort(A, last, first=0):
 	if first < last:
 		middle = (first + last)//2
 		merge_sort(A, first, middle)
@@ -26,5 +26,5 @@ def merge(A, first, middle, last):
 			
 A = [5,9,1,2,4,8,6,3,7]
 print(A)
-merge_sort(A)
+merge_sort(A, len(A)-1)
 print(A)
