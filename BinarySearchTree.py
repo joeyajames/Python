@@ -37,6 +37,16 @@ class Node:
 				return self.rightChild.find(data)
 			else:
 				return False
+				
+	def getHeight(self):
+		if self.leftChild and self.rightChild:
+			return 1 + max(self.leftChild.getHeight(), self.rightChild.getHeight())
+		elif self.leftChild:
+			return 1 + self.leftChild.getHeight()
+		elif self.rightChild:
+			return 1 + self.rightChild.getHeight()
+		else:
+			return 1
 
 	def preorder(self):
 		if self:
@@ -78,6 +88,12 @@ class Tree:
 			return self.root.find(data)
 		else:
 			return False
+			
+	def getHeight(self):
+		if self.root:
+			return self.root.getHeight()
+		else:
+			return -1
 	
 	def remove(self, data):
 		# empty tree
@@ -176,7 +192,7 @@ class Tree:
 		if self.root is not None:
 			print("PreOrder")
 			self.root.preorder()
-        
+		
 	def postorder(self):
 		if self.root is not None:
 			print("PostOrder")
@@ -189,8 +205,9 @@ class Tree:
 
 bst = Tree()
 print(bst.insert(10))
-
+#print(bst.insert(5))
 bst.preorder()
+print(bst.getHeight())
 #bst.postorder()
 #bst.inorder()
 print(bst.remove(10))
