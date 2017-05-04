@@ -1,12 +1,13 @@
-# revised Mergesort. updated 1/31/2017 based on feedback from users.
-
 import sys
+
+def merge_sort(A):
+	merge_sort2(A, 0, len(A)-1)
 	
-def merge_sort(A, last, first=0):
+def merge_sort2(A, first, last):
 	if first < last:
 		middle = (first + last)//2
-		merge_sort(A, first, middle)
-		merge_sort(A, middle+1, last)
+		merge_sort2(A, first, middle)
+		merge_sort2(A, middle+1, last)
 		merge(A, first, middle, last)
 		
 def merge(A, first, middle, last):
@@ -26,5 +27,5 @@ def merge(A, first, middle, last):
 			
 A = [5,9,1,2,4,8,6,3,7]
 print(A)
-merge_sort(A, len(A)-1)
+merge_sort(A)
 print(A)
