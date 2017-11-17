@@ -7,5 +7,5 @@ this Python repository, according to the MIT License.
 Feel free to post any comments on my YouTube channel.
 
 Joe James.
-Fremont, California
+Fremont, California.
 Copyright (C) 2015-2017, Joe James
