@@ -1,0 +1,60 @@
+https://docs.scipy.org/doc/numpy-1.12.0/reference/
+
+Numpy
+    install Numpy using pip
+    import numpy as np
+    ndarray - an N-dimensional array, which describes a collection of “items” of the same type
+    array(list)                    # constructor
+    asarray(a[, dtype, order])     # Convert the input to an array
+    Constants:
+        ndarray.shape        tuple of array dimensions
+        ndarray.size        number of elements in array
+        ndarray.itemsize    size of one element
+        ndarray.dtype        data type of elements
+        ndarray.flat        1D iterator over elements of array
+    Common Functions
+        np.tolist()
+        np.reshape(a, (3,2))
+        np.swapaxes(axis1, axis2)
+        np.copy()
+        arange()  
+    Statistics Functions:
+        np.sum(a, axis)
+        np.prod
+        np.min
+        np.max
+        np.mean
+        np.std                standard deviation
+		np.var
+        np.sort(axis)
+	Other Functions:
+		String operations
+		logical operations - AND, OR, XOR, NOT, >, <, =, ...
+		trig functions
+		complex numbers (real + imaginary)
+		polynomials
+		2D matrix operations
+		Fourier transforms
+====================================================================================
+import numpy as np
+x = [0,1,2,3,4,5]
+a = np.array(x)
+
+index: a[2]
+
+slice:	a[start:stop:step]
+	a[1:4:2]
+	a[3:]
+	a[:3]
+a.shape
+a.size
+a.itemsize
+a.dtype
+
+b = np.array([[1,2,3], [4,5,6]])
+b.swapaxes(0,1)
+
+a = np.arange(0,6)
+a = np.arange(0,6).reshape(2,3)
+
+		
