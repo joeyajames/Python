@@ -259,8 +259,8 @@ x = ['pig', 'cow'] + ['horse']
 print (x)				# prints ['pig', 'cow', 'horse']
 
 # Multiplying -- multiply a sequence using *
-x = ‘bug' * 3
-print (x)				# prints ‘bugbugbug'
+x = 'bug' * 3
+print (x)				# prints 'bugbugbug'
 
 x = [8, 5] * 3
 print (x)				# prints [8, 5, 8, 5, 8, 5]
@@ -306,7 +306,7 @@ print (max(x))			# prints 'pig'
 
 # Sum -- find the sum of items in a sequence
 # entire sequence must be numeric type
-x = [5, 7, 'bug‘]
+x = [5, 7, 'bug']
 print (sum(x))			# error!
 
 x = [2, 5, 8, 12]
