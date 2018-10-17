@@ -157,6 +157,15 @@ if my_age > 18:
     if grade == 'A':
         print('I can go to the party!')
 
+# if ternary
+x = 10
+y = 20
+#  action/ if condition true/ else condfition false
+z = x + y if x > y else y - x
+print(z)
+# result 10
+
+
 # STRINGS
 # ------------------------------------------------
 # a string is a sequence of characters (ie. text)
