@@ -1,0 +1,75 @@
+Data.gov
+NOAA - https://www.ncdc.noaa.gov/cdo-web/
+    atmospheric, ocean
+Bureau of Labor Statistics - https://www.bls.gov/data/
+    employment, inflation
+US Census Data - https://www.census.gov/data.html
+    demographics, income, geo, time series
+Bureau of Economic Analysis - http://www.bea.gov/data/gdp/gross-domestic-product
+    GDP, corporate profits, savings rates
+Federal Reserve - https://fred.stlouisfed.org/
+    curency, interest rates, payroll
+Quandl -  https://www.quandl.com/
+    financial and economic 
+
+Data.gov.uk
+UK Dataservice - https://www.ukdataservice.ac.uk
+    Census data and much more
+WorldBank - https://datacatalog.worldbank.org
+    census, demographics, geographic, health, income, GDP
+IMF - https://www.imf.org/en/Data
+    economic, currency, finance, commodities, time series
+OpenData.go.ke
+    Kenya govt data on agriculture, education, water, health, finance, …
+https://data.world/
+Open Data for Africa - http://dataportal.opendataforafrica.org/
+    agriculture, energy, environment, industry, …
+Kaggle - https://www.kaggle.com/datasets
+    A huge variety of different datasets
+Amazon Reviews - https://snap.stanford.edu/data/web-Amazon.html
+    35M product reviews from 6.6M users
+GroupLens - https://grouplens.org/datasets/movielens/
+    20M movie ratings
+Yelp Reviews - https://www.yelp.com/dataset
+    6.7M reviews, pictures, businesses
+IMDB Reviews - http://ai.stanford.edu/~amaas/data/sentiment/
+    25k Movie reviews
+Twitter Sentiment 140 - http://help.sentiment140.com/for-students/
+    160k Tweets
+Airbnb - http://insideairbnb.com/get-the-data.html
+    A TON of data by geo
+UCI ML Datasets - http://mlr.cs.umass.edu/ml/
+    iris, wine, abalone, heart disease, poker hands, ….
+Enron Email dataset - http://www.cs.cmu.edu/~enron/
+    500k emails from 150 people
+    From 2001 energy scandal. See the movie: The Smartest Guys in the Room.
+Spambase - https://archive.ics.uci.edu/ml/datasets/Spambase
+    Emails
+Jeopardy Questions - https://www.reddit.com/r/datasets/comments/1uyd0t/200000_jeopardy_questions_in_a_json_file/
+    200k Questions and answers in json
+Gutenberg Ebooks - http://www.gutenberg.org/wiki/Gutenberg:Offline_Catalogs
+    Large collection of books
+    
+IMAGES
+ImageNet - http://image-net.org
+    14M images of objects
+Google - https://ai.googleblog.com/2016/09/introducing-open-images-dataset.html
+    9M image URLs with labels
+Microsoft Coco - http://cocodataset.org
+    330k images, most labeled
+Labelled Faces in the Wild - http://vis-www.cs.umass.edu/lfw/
+    13k face images with names
+Stanford Dogs - http://vision.stanford.edu/aditya86/ImageNetDogs/
+    120 dog breeds, 20k images
+
+AUTONOMOUS CARS
+Berkeley DeepDrive - https://bdd-data.berkeley.edu/
+    Massive dataset including 100k videos with 1100 hours of hd driving
+Belgian Traffic Signs - http://www.vision.ee.ethz.ch/~timofter/traffic_signs/
+    10k images
+Bosch Small Traffic Signals - https://hci.iwr.uni-heidelberg.de/node/6132
+    5k training and 8k test images
+WPI Traffic Light, Pedestrian, Lane-Keeping - http://computing.wpi.edu/dataset.html
+    30GB of training and test data from Worcester, Mass
+UCSD Lisa - http://cvrr.ucsd.edu/LISA/datasets.html
+    Vehicle detection, traffic signals
