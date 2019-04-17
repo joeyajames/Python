@@ -4,9 +4,9 @@ class Vertex:
 		self.name = n
 		self.neighbors = list()
 	
-	def add_neighbor(self, v):
+	def add_neighbor(self, v, weight):
 		if v not in self.neighbors:
-			self.neighbors.append(v)
+			self.neighbors.append((v, weight))
 			self.neighbors.sort()
 
 class Graph:
@@ -19,11 +19,11 @@ class Graph:
 		else:
 			return False
 	
-	def add_edge(self, u, v):
+	def add_edge(self, u, v, weight=0):
 		if u in self.vertices and v in self.vertices:
 			# my YouTube video shows a silly for loop here, but this is a much faster way to do it
-			self.vertices[u].add_neighbor(v)
-			self.vertices[v].add_neighbor(u)
+			self.vertices[u].add_neighbor(v, weight)
+			self.vertices[v].add_neighbor(u, weight)
 			return True
 		else:
 			return False
