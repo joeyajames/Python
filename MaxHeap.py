@@ -23,7 +23,8 @@ class MaxHeap:
 	def pop(self):
 		if len(self.heap) > 2:
 			self.__swap(1, len(self.heap) - 1)
-			max = self.heap.pop()
+			max = self.heap.pop() #The pop() function used here is not the same that has been defined in the class
+			#here, self.heap is a list, ergo the self.heap.pop() pops the last element from the list
 			self.__bubbleDown(1)
 		elif len(self.heap) == 2:
 			max = self.heap.pop()
