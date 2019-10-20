@@ -2,7 +2,7 @@
 
 max = int(input("Find primes up to what number? : "))
 primeList = []
-
+#for loop for checking each number
 for x in range(2, max + 1):
 	isPrime = True
 	index = 0
