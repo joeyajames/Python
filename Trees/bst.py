@@ -131,7 +131,6 @@ class Tree:
 					delNodeParent = delNode
 					delNode = delNode.leftChild
 					
-				self.root.value = delNode.value
 				if delNode.rightChild:
 					if delNodeParent.value > delNode.value:
 						delNodeParent.leftChild = delNode.rightChild
@@ -142,6 +141,7 @@ class Tree:
 						delNodeParent.leftChild = None
 					else:
 						delNodeParent.rightChild = None
+				self.root.value = delNode.value
 						
 			return True
 		
