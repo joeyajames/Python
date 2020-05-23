@@ -22,14 +22,17 @@ def insertion_sort2(A):
 def insertion_sort3(A):
 	for i in range(1, len(A)):
 		curNum = A[i]
-		k = 0
-		for j in range(i-1, -2, -1):
-			k = j
+		k = None
+		for j in range(i-1, -1, -1):
 			if A[j] > curNum:
 				A[j+1] = A[j]
 			else:
+				k = j
 				break
-		A[k+1] = curNum
+		if not k:
+			A[0] = curNum
+		else:
+			A[k] = curNum
 			
 A = [5,9,1,2,4,8,6,3,7]
 print(A)
