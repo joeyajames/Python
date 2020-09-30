@@ -1,4 +1,4 @@
-# Python
+# Python Project
 These files are mainly intended to accompany my series of YouTube tutorial videos here, 
 https://www.youtube.com/user/joejamesusa
 and are mainly intended for educational purposes.
@@ -8,4 +8,4 @@ Feel free to post any comments on my YouTube channel.
 
 Joe James.
 Fremont, California.
-Copyright (C) 2015-2019, Joe James
+Copyright (C) 2015-2019, Joe James.
