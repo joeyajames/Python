@@ -6,7 +6,7 @@ You are invited to subscribe to my video channel, and to download and use any co
 this Python repository, according to the MIT License. 
 Feel free to post any comments on my YouTube channel.
 
-And you can also share to eceryone so that they can also learn something new.
+And you can also share to everyone so that they can also learn something new.
 
 
 
