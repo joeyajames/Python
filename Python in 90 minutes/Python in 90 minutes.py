@@ -7,7 +7,9 @@ print('Hello World')
 # ------------------------------------------------
 # variables are used for temporary storage of data that may change
 # a single equals sign is the assignment operator
+# We can also change a variable quantity like this
 age = 26
+age = 45
 first_name = 'Shivika'
 gpa = 3.99
 
