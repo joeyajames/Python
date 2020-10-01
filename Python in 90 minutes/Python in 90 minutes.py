@@ -1,7 +1,9 @@
 # INTRODUCTION TO PYTHON
 # ------------------------------------------------
 # to print, put text inside single or double quotes, inside parentheses.
-print('Hello World')
+print('Hello World') 
+or 
+print("Hello World")
 
 # VARIABLES 
 # ------------------------------------------------
@@ -10,6 +12,7 @@ print('Hello World')
 age = 26
 first_name = 'Shivika'
 gpa = 3.99
+bool = true
 
 # here we can see three different types of data stored in variables: an integer, a string, and a float.
 # You do not have to declare the data type stored in each variable. Python does that for you.
@@ -17,6 +20,7 @@ gpa = 3.99
 print(type(age))
 print(type(first_name))
 print(type(gpa))
+print(type(bool))
 
 # variables are "dynamically typed" -- Python checks the type at runtime
 age = 26.2
@@ -64,14 +68,19 @@ print(bool(0 and 1))
 # 	** Power
 x = 5 + 7
 print(x, type(x))
+
 x = 5 - 7
 print(x, type(x))
+
 x = 7 / 4
 print(x, type(x))
+
 x = 7 // 4
 print(x, type(x))
+
 x = 7 % 4
 print(x)
+
 x = 4 ** 3
 print(x)
 
