@@ -16,7 +16,7 @@ class Node(object):
 	def set_data (self, d):
 		self.data = d
 		
-	def to_string (self):
+	def __str__(self):
 		return "Node value: " + str(self.data)
 
 class CircularLinkedList (object):
@@ -71,10 +71,10 @@ class CircularLinkedList (object):
 		if self.root is None:
 			return
 		this_node = self.root
-		print (this_node.to_string())
+		print (this_node)
 		while this_node.get_next() != self.root:
 			this_node = this_node.get_next()
-			print (this_node.to_string())
+			print (this_node)
 
 def main():
 	myList = CircularLinkedList()
@@ -87,10 +87,10 @@ def main():
 	print("Find 12", myList.find(12))
 
 	cur = myList.root
-	print (cur.to_string())
+	print (cur)
 	for i in range(8):
 		cur = cur.get_next();
-		print (cur.to_string())
+		print (cur)
 
 	print("size="+str(myList.get_size()))
 	myList.print_list()
