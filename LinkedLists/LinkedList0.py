@@ -59,6 +59,7 @@ class LinkedList (object):
 
 myList = LinkedList()
 myList.add(5)
+print("data added")
 myList.add(8)
 myList.add(12)
 print("size="+str(myList.get_size()))
