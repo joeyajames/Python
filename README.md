@@ -12,6 +12,6 @@ This source codes are easy to understand and reliable for self study and you wil
 
 Thank you for reviewing my repositories and keep practising.
 Joe James.
-Fremont, California.
+Fremont, CA.
 Copyright (C) 2015-2019, Joe James
 HELLO
