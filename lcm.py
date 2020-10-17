@@ -1,4 +1,4 @@
-# computes Lowest Common Multiple LCM / Least Common Denominator LCD
+# computes Lowest Common Multiple (LCM) / Least Common Denominator (LCD)
 # useful for adding and subtracting fractions
 
 # 2 numbers
