@@ -1,7 +1,7 @@
 # INTRODUCTION TO PYTHON
 # ------------------------------------------------
 # to print, put text inside single or double quotes, inside parentheses.
-print('Hello World')
+print('Hello, World')
 
 # VARIABLES 
 # ------------------------------------------------
@@ -14,6 +14,7 @@ gpa = 3.99
 # here we can see three different types of data stored in variables: an integer, a string, and a float.
 # You do not have to declare the data type stored in each variable. Python does that for you.
 # You can see what type of data is in a variable using the type() function
+
 print(type(age))
 print(type(first_name))
 print(type(gpa))
@@ -435,7 +436,7 @@ x = set(list1)			# new set from list. strips duplicates, {5, 7}
 x = {3*x for x in range(10) if x>5} 
 # resulting set: {18, 21, 24, 27} but in random order
 
-# DICTIONARIES
+# DICTIONARIES(Accessing by keys)
 # ------------------------------------------------
 # constructors – creating a new dict
 x = {'pork':25.3, 'beef':33.8, 'chicken':22.7}
@@ -449,7 +450,7 @@ x.items()				# returns list of key-value tuple pairs in x
 
 item in x.values()		# tests membership in x, returns boolean
 
-# Iterating a Dict
+# Iterating through Dictionary
 for key in x:			# iterate keys
     print(key, x[key])	# print all key/value pairs
 
@@ -585,12 +586,3 @@ with open('Cities.txt', 'w') as fout:
         for line in fin:
             row = line.split(',')
             fout.write(row[2] + '\n')
-
-
-
-
-
-
-
-
-
