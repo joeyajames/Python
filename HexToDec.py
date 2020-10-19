@@ -7,12 +7,12 @@ def __getDecDigit(digit):
 		if digit == digits[x]:
 			return x
 			
-def hexToDec(hexNum):
-	decNum = 0
+def hexToDec(hexNumber):
+	decNumber = 0
 	power = 0
-	for digit in range(len(hexNum), 0, -1):
-		decNum = decNum + 16 ** power * __getDecDigit(hexNum[digit-1])
+	for digit in range(len(hexNumber), 0, -1):
+		decNumber = decNumber + 16 ** power * __getDecDigit(hexNumber[digit-1])
 		power += 1
-	print(str(decNum))
+	print(str(decNumber))
 	
 hexToDec("A5")
