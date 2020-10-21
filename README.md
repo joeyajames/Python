@@ -1,3 +1,4 @@
+#This is a open source project.
 # Python 3
 These files are mainly intended to accompany my series of YouTube tutorial videos here, 
 https://www.youtube.com/user/joejamesusa
