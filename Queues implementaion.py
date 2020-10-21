@@ -54,15 +54,6 @@ class Queue:
         for i in self.items:
             ar.append(i)
         return ar
-
-
-
-
-
-
-
-
-
 que = Queue()
 que.enqueue('google')
 que.enqueue('youtube')
