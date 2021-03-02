@@ -16,4 +16,6 @@ GIT COMMANDS FOR CONTRIBUTING -
 5. To push changes
 `git push [remote branch] [new branch]`
 
+HAPPY CONTRIBUTION!!!!!!!!	
+
  
