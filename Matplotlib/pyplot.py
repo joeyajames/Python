@@ -1,5 +1,5 @@
 import numpy as np
-import pandas as pd
+import panda as pd
 import matplotlib.pyplot as plt
 
 # 1. simple plot with 4 numbers
