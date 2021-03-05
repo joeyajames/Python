@@ -11,7 +11,7 @@ i am very happy to see you there on my you tube channel. excited!!!!!!!!!
 
 This source codes are easy to understand and reliable for self study and you will learn them easily, try to practice more coding by making algorithms yourself and you can be better python programmer and remember "Try to learn something about everything and everything about something".
 
-Please Do checkout the contributing.txt file those who want to contribute to this repository. 
+Please Do checkout the contributing.txt file those who want to contribute to this repository.
 
 Thank you for reviewing my repositories and keep practicing.
 Joe James.
