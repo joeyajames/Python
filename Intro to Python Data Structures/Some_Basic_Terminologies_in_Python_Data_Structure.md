@@ -1,12 +1,14 @@
-##Data Structure Overview
+## Data Structure Overview
+
 Data structures are fundamental concepts of computer science which helps is writing efficient programs in any language. Python is a high-level, interpreted, interactive and object-oriented scripting language using which we can study the fundamentals of data structure in a simpler way as compared to other programming languages.
 
 In this chapter we are going to study a short overview of some frequently used data structures in general and how they are related to some specific python data types. There are also some data structures specific to python which is listed as another category.
 
-##General Data Structures
+## General Data Structures
+
 The various data structures in computer science are divided broadly into two categories shown below. We will discuss about each of the below data structures in detail in subsequent chapters.
 
-#Liner Data Structures
+# Liner Data Structures
 These are the data structures which store the data elements in a sequential manner.
 
 Array: It is a sequential arrangement of data elements paired with the index of the data element.
@@ -23,7 +25,7 @@ Heap: It is a special case of Tree data structure where the data in the parent n
 Hash Table: It is a data structure which is made of arrays associated with each other using a hash function. It retrieves values using keys rather than index from a data element.
 Graph: .It is an arrangement of vertices and nodes where some of the nodes are connected to each other through links.
 
-#Python Specific Data Structures
+## Python Specific Data Structures
 These data structures are specific to python language and they give greater flexibility in storing different types of data and faster processing in python environment.
 
 List: It is similar to array with the exception that the data elements can be of different data types. You can have both numeric and string data in a python list.
