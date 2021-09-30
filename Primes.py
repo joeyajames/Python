@@ -1,4 +1,5 @@
 # prime number calculator: find all primes up to n
+#This program calculates and finds all prime numbers up to n
 
 max = int(input("Find primes up to what number? : "))
 primeList = []
