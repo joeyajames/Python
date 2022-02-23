@@ -9,6 +9,6 @@ def gcf (num1, num2):
 		if num1 % x == 0 and num2 % x == 0:
 			return x
 			
-num1 = 18
-num2 = 204
-print (str(gcf(num1, num2)))
+num1 = int(input("Enter your first no.: "))
+num2 = int(input("Enter your second no.: "))
+print("Your Greatest Common Factor: ", str(gcf(num1, num2)))
