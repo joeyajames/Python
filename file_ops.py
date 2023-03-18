@@ -1,53 +1,37 @@
 infile = "inputFile.txt"
 outfile = "outputFile.txt"
 
-# print each line, as read in
-with open(infile) as f1:
-	for line in f1:
-		print (line)
+# read file and print each line
+with open(infile) as f:
+    for line in f:
+        print(line, end='')
 
-print ("\n*******************")
+# read file and print each line without the newline character
+with open(infile) as f:
+    for line in f:
+        print(line.rstrip())
 
-# print each line, stripping last newline character
-with open(infile) as f1:
-	for line in f1:
-		print (line[:-1])
+# read file and print only the first word of each line
+with open(infile) as f:
+    for line in f:
+        print(line.split(',')[0])
 
-print ("\n*******************")
-		
-# print makes only (first word of each line)
-with open(infile) as f1:
-	for line in f1:
-		row = line.split(",")
-		print(row[0])
+# read file and print each line as a formatted list
+with open(infile) as f:
+    for line in f:
+        row = line.split(',')
+        print(f"{row[0]}\n{'-' * 17}")
+        for item in row[1:]:
+            print(item.strip())
 
-print ("\n*******************")
-		
-# print each line as a formatted list
-with open(infile) as f1:
-	for line in f1:
-		row = line.split(",")
-		print(row[0] + "\n-----------------")
-		for i in range(1, len(row)):
-			print(row[i])
+# read file and create a list of rows
+with open(infile) as f:
+    cars = [line.strip().split(',') for line in f]
 
-print ("\n*******************")
-			
-# add each line to a list
-cars = list()
-with open(infile) as f1:
-	for line in f1:
-		row = line.split(",")
-		cars.append(row)
-	print(cars[0][0])
-	
 # write Makes only to outputFile
-with open(outfile, 'a') as f2:
-	for car in cars:
-		f2.write(car[0] + "\n")
+with open(outfile, 'w') as f:
+    f.write('\n'.join(car[0] for car in cars))
 
-# write list of row-lists to outputFile
-with open(outfile, 'a') as f2:
-	for car in cars:
-		f2.write(str(car) + "\n")
-		
+# write list of rows to outputFile
+with open(outfile, 'a') as f:
+    f.write('\n'.join(str(car) for car in cars))
