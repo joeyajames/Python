@@ -1,20 +1,16 @@
-#Today we will learn how to create a class and other attributes of class
-#Below is the method how classes are defined
+# Define the class with attributes and methods
 class Student:
-    pass
+    def __init__(self, name, std, section=None, subjects=None):
+        self.name = name
+        self.std = std
+        self.section = section
+        self.subjects = subjects or []
 
-#Below is the method to create object , Here Varun and rohan are two objects of Class Student
-Varun = Student()
-larry = Student()
+# Create objects and pass values to the constructor
+varun = Student("Harry", 12, section=1)
+larry = Student("Larry", 9, subjects=["Hindi", "Physics"])
 
-# Now after creating objects we can use them to call variables
-Varun.name = "Harry"
-Varun.std = 12
-Varun.section = 1
-larry.std = 9
-larry.subjects = ["hindi", "physics"]
-print(Varun.section, larry.subjects)
-
-
+# Access object attributes
+print(varun.section, larry.subjects)
 
 
