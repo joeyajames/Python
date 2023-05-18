@@ -15,9 +15,9 @@ class MaxHeap:
 		self.__floatUp(len(self.heap) - 1)
 
 	def peek(self):
-		if self.heap[1]:
+		try:
 			return self.heap[1]
-		else:
+		except IndexError:
 			return False
 			
 	def pop(self):
