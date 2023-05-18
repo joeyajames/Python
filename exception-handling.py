@@ -1,4 +1,4 @@
-# something more about try except
+# More infomation on Try Accept Blocks
 # basic syntax
 '''
 try:
