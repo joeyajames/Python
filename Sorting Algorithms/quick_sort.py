@@ -6,7 +6,7 @@ def quick_sort(A):
 
 
 def quick_sort2(A, low, hi):
-    if hi - low < threshold and low < hi:
+    if hi - low < low < hi:
         quick_selection(A, low, hi)
     elif low < hi:
         p = partition(A, low, hi)
