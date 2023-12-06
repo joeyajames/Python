@@ -5,6 +5,7 @@ def quick_sort(A):
 	quick_sort2(A, 0, len(A)-1)
 	
 def quick_sort2(A, low, hi):
+	threshold = 0
 	if hi-low < threshold and low < hi:
 		quick_selection(A, low, hi)
 	elif low < hi:
