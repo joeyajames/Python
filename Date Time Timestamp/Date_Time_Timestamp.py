@@ -19,21 +19,21 @@ dateutil # extended datetime functionality, esp string parsing and delta calcula
 # get day of the week using date.weekday() # Monday is 0
 
 from datetime import date
-d1 = date.today()
-print(d1)
-print(d1.month, d1.day, d1.year)
-print(d1.weekday())
+todays_date = date.today()
+print(todays_date)
+print(todays_date.month, todays_date.day, todays_date.year)
+print(todays_date.weekday())
 
 # ISO format is a string format, yyyy-mm-dd
 # ---------------------------
 # date_object.isoformat() does the same thing as str(date_object)
 
 from datetime import date
-d1 = date.fromisoformat('2011-11-23')
-print(d1)
-print(str(d1))
-print(d1.isoformat())
-d1
+todays_date = date.fromisoformat('2011-11-23')
+print(todays_date)
+print(str(todays_date))
+print(todays_date.isoformat())
+todays_date
 
 # Comparison, addition and sutraction of dates
 # ---------------------------
@@ -42,10 +42,10 @@ d1
 # The same comparison and add/subtract operations can be used with time objects.
 
 from datetime import date
-d1 = date.today()
+todays_date = date.today()
 d2 = date(2015, 5, 14)
-print(d1 > d2)
-print(d1 - d2)
+print(todays_date > d2)
+print(todays_date - d2)
 
 # Time
 # ---------------------------
@@ -95,9 +95,9 @@ print(t3.strftime('%a, %A, %b, %B, %x'))
 # A timedelta can also be multiplied or divided by an integer or float
 
 from datetime import timedelta, date, time
-d1 = date(2011, 6, 15)
+todays_date = date(2011, 6, 15)
 d2 = date(2012, 9, 18)
-td = d2 - d1
+td = d2 - todays_date
 print(td, type(td))
 print(td.total_seconds())
 print(td * 3)

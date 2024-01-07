@@ -1,0 +1,21 @@
+Contributions are always welcome!!!!
+If you want to contribute to this repository follow the below procedure -
+1. Fork this repository
+2. Clone the code to your local system and go through readme.md
+3. You can create another branch to add further commits
+
+GIT COMMANDS FOR CONTRIBUTING -
+1. To clone this repository
+`git clone [code link]`
+2.To create new branch
+`git checkout -b [branch name] `
+3. To stage files
+`git add .`
+4.To commit changes
+`git commit -m "commit message"`
+5. To push changes
+`git push [remote branch] [new branch]`
+
+HAPPY CONTRIBUTION!!!!!!!!	
+
+ 
