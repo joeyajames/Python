@@ -21,15 +21,18 @@ class LinkedList (object):
 
     def __init__(self, r = None):
         self.root = r
-        self.size = 0
+        self.size = 1
 
     def get_size (self):
         return self.size
 
     def add (self, d):
         new_node = Node (d, self.root)
-        self.root = new_node
-        self.size += 1
+        if self.root is not None:
+            self.root = new_node
+            self.size += 1
+        else:
+            self.root = new_node
 
     def remove (self, d):
         this_node = self.root
@@ -58,7 +61,9 @@ class LinkedList (object):
         return None
 
 myList = LinkedList()
+print("size="+str(myList.get_size()))
 myList.add(5)
+print("size="+str(myList.get_size()))
 myList.add(8)
 myList.add(12)
 print("size="+str(myList.get_size()))
