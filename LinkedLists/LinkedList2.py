@@ -38,6 +38,16 @@ class LinkedList (object):
 		self.root = new_node
 		self.size += 1
 
+	def add_at_end (self,d):
+		new_node = Node (d)
+		if self.root is None:
+			self.root = new_node
+		current_node = self.root
+		while (current_node.has_next()):
+			current_node = current_node.get_next()
+		current_node.next_node = new_node
+		self.size += 1
+
 	def add_node (self, n):
 		n.set_next(self.root)
 		self.root = n
