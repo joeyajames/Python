@@ -14,16 +14,16 @@ def draw():
 	
 	x_pos = randint(-200,200)
 	y_pos = randint(-200,200)
-	tt.pu()
+	tt.penup()
 	tt.setpos(x_pos, y_pos)
 	start_position = tt.pos()
-	tt.pd()
+	tt.pendown()
 	
 	tt.begin_fill()
 	while True:
 		tt.forward(size)
 		tt.left(angle)
-		if abs(tt.pos() - start_position) < 1:
+		if tt.distance(start_position) < 1:
 			break
 	tt.end_fill()
 	
