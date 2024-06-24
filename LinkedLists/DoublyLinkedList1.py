@@ -53,7 +53,7 @@ class LinkedList (object):
                 if prev:
                     prev.set_next(next)
                 else:
-                    self.root = this_node
+                    self.root = next
                 self.size -= 1
                 return True		# data removed
             else:
