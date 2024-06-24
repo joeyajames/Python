@@ -80,20 +80,23 @@ class LinkedList (object):
 			this_node = this_node.get_next()
 			print (this_node.to_string())
 			
-	def sort (self):
-		if self.size > 1:
-			newlist = [];
-			current = self.root;
-			newlist.append(self.root);
-			while current.has_next():
-				current = current.get_next();
-				newlist.append(current);
-			newlist = sorted(newlist, key = lambda node: node.get_data(), reverse = True);
-			newll = LinkedList();
-			for node in newlist:
-				newll.add_node(node);
-			return newll;
-		return self;
+	def sort_list(self, reverse_list = True):
+            if self.size > 1:
+                temp_list = []
+                current = self.root
+                
+                temp_list.append(current.get_data())
+                while current.has_next_node():
+                    current = current.get_next()
+                    temp_list.append(current.get_data())  #to put the data instead of the node object.
+                
+                temp_list = sorted(temp_list,  reverse = reverse_list) # added a parameter to control sorting order 
+                
+                sorted_Linked_List = LinkedList()
+                for element in temp_list:
+                    sorted_Linked_List.add_node(element)
+                return sorted_Linked_List
+            return self
 		
 def main():
 	myList = LinkedList()
@@ -113,7 +116,9 @@ def main():
 	print("Find 25", myList.find(25))
 	myList.print_list()
 	
-main()
+if __name__ == "__main__":
+    main()
+
 
 
 
