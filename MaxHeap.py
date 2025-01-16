@@ -15,10 +15,10 @@ class MaxHeap:
 		self.__floatUp(len(self.heap) - 1)
 
 	def peek(self):
-		if self.heap[1]:
+		if len(self.heap)>1:
 			return self.heap[1]
-		else:
-			return False
+		else: 
+			return false
 			
 	def pop(self):
 		if len(self.heap) > 2:
