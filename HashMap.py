@@ -49,7 +49,8 @@ class HashMap:
                 arr = []
                 for i in range(0, len(self.map)):
                         if self.map[i]:
-                                arr.append(self.map[i][0])
+                            for j in range(len(self.map[i])):
+                                arr.append(self.map[i][j])
                 return arr
 			
         def print(self):
