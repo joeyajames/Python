@@ -7,7 +7,7 @@ def __getDecDigit(digit):
 		if digit == digits[x]:
 			return x
 			
-def hexToDec(hexNum):
+def hex_to_Dec(hexNum):
 	decNum = 0
 	power = 0
 	for digit in range(len(hexNum), 0, -1):
