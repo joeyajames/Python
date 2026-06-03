@@ -12,7 +12,8 @@ class Vertex:
 			self.neighbors.sort()
 
 class Graph:
-	vertices = {}
+	def __init__(self):
+		self.vertices = {}
 	
 	def add_vertex(self, vertex):
 		if isinstance(vertex, Vertex) and vertex.name not in self.vertices:
@@ -40,21 +41,18 @@ class Graph:
 		q = list()
 		vert.distance = 0
 		vert.color = 'red'
-		for v in vert.neighbors:
-			self.vertices[v].distance = vert.distance + 1
-			q.append(v)
+		q.append(vert.name)
 		
 		while len(q) > 0:
 			u = q.pop(0)
 			node_u = self.vertices[u]
-			node_u.color = 'red'
 			
 			for v in node_u.neighbors:
 				node_v = self.vertices[v]
 				if node_v.color == 'black':
+					node_v.color = 'red'
+					node_v.distance = node_u.distance + 1
 					q.append(v)
-					if node_v.distance > node_u.distance + 1:
-						node_v.distance = node_u.distance + 1
 					
 g = Graph()
 a = Vertex('A')

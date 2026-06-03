@@ -3,19 +3,20 @@
 # private functions: __swap, __floatUp, __bubbleDown
 
 class MaxHeap:
-	def __init__(self, items=[]):
+	def __init__(self, items=None):
 		super().__init__()
 		self.heap = [0]
-		for i in items:
-			self.heap.append(i)
-			self.__floatUp(len(self.heap) - 1)
+		if items is not None:
+			for i in items:
+				self.heap.append(i)
+				self.__floatUp(len(self.heap) - 1)
 
 	def push(self, data):
 		self.heap.append(data)
 		self.__floatUp(len(self.heap) - 1)
 
 	def peek(self):
-		if self.heap[1]:
+		if len(self.heap) > 1:
 			return self.heap[1]
 		else:
 			return False
@@ -56,5 +57,15 @@ class MaxHeap:
 
 m = MaxHeap([95, 3, 21])
 m.push(10)
-print(str(m.heap[0:len(m.heap)]))
-print(str(m.pop()))
+print("Heap state:", m.heap)
+print("Peek top:", m.peek())
+print("Popped:", m.pop())
+print("Peek top after pop:", m.peek())
+
+# Test empty heap peek
+empty_heap = MaxHeap()
+print("Empty heap peek:", empty_heap.peek())
+
+# Test heap with 0
+heap_with_zero = MaxHeap([0])
+print("Zero heap peek:", heap_with_zero.peek())

@@ -192,7 +192,6 @@ class Tree:
 				delNodeParent = delNode
 				delNode = delNode.leftChild
 				
-			node.value = delNode.value
 			if delNode.rightChild:
 				if delNodeParent.value > delNode.value:
 					delNodeParent.leftChild = delNode.rightChild
@@ -203,6 +202,8 @@ class Tree:
 					delNodeParent.leftChild = None
 				else:
 					delNodeParent.rightChild = None
+			node.value = delNode.value
+			return True
 
 	def preorder(self):
 		if self.root is not None:
@@ -221,16 +222,26 @@ class Tree:
 
 def main():
 	bst = Tree()
-	print(bst.insert(10))
-	print(bst.insert(5))
+	print("Insert 10:", bst.insert(10))
+	print("Insert 5:", bst.insert(5))
 	bst.insert(2)
 	bst.insert(7)
 	bst.preorder()
 	print('Height = ', bst.getHeight())
 	print('Size = ', bst.getSize())
-	#bst.postorder()
-	#bst.inorder()
-	print(bst.remove(10))
+	print("Removing root 10:", bst.remove(10))
 	bst.preorder()
 	
-main()
+	# Test removing non-root node with two children
+	print("\n--- Testing non-root node removal with two children ---")
+	t = Tree()
+	for val in [10, 5, 15, 2, 7, 12, 17, 11, 13, 14]:
+		t.insert(val)
+	print("Preorder before removing 12:")
+	t.preorder()
+	print("Removing 12:", t.remove(12))
+	print("Preorder after removing 12:")
+	t.preorder()
+	
+if __name__ == "__main__":
+	main()

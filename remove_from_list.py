@@ -37,7 +37,10 @@ print(dogs)
 dogs = get_dogs()
 print('6. del entire list:')
 del(dogs)
-print(dogs)
+try:
+	print(dogs)
+except NameError:
+	print("NameError: 'dogs' is no longer defined (successfully deleted)")
 
 
 

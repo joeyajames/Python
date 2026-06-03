@@ -1,5 +1,18 @@
+import os
+
 infile = "inputFile.txt"
 outfile = "outputFile.txt"
+
+# Create a sample input file if it does not exist
+if not os.path.exists(infile):
+	with open(infile, "w") as f:
+		f.write("Ford,Mustang,2020,Red\n")
+		f.write("Toyota,Camry,2019,Blue\n")
+		f.write("Honda,Civic,2021,Black\n")
+
+# Clean up previous output file if exists to prevent accumulation across runs
+if os.path.exists(outfile):
+	os.remove(outfile)
 
 # print each line, as read in
 with open(infile) as f1:
