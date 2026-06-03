@@ -1,0 +1,6 @@
+Ford
+Toyota
+Honda
+['Ford', 'Mustang', '2020', 'Red\n']
+['Toyota', 'Camry', '2019', 'Blue\n']
+['Honda', 'Civic', '2021', 'Black\n']

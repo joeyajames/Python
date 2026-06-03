@@ -1,0 +1,3 @@
+Ford,Mustang,2020,Red
+Toyota,Camry,2019,Blue
+Honda,Civic,2021,Black

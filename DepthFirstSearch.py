@@ -13,8 +13,9 @@ class Vertex:
 			self.neighbors.sort()
 
 class Graph:
-	vertices = {}
-	time = 0
+	def __init__(self):
+		self.vertices = {}
+		self.time = 0
 	
 	def add_vertex(self, vertex):
 		if isinstance(vertex, Vertex) and vertex.name not in self.vertices:
@@ -39,20 +40,18 @@ class Graph:
 			print(key + str(self.vertices[key].neighbors) + "  " + str(self.vertices[key].discovery) + "/" + str(self.vertices[key].finish))
 
 	def _dfs(self, vertex):
-		global time
 		vertex.color = 'red'
-		vertex.discovery = time
-		time += 1
+		vertex.discovery = self.time
+		self.time += 1
 		for v in vertex.neighbors:
 			if self.vertices[v].color == 'black':
 				self._dfs(self.vertices[v])
 		vertex.color = 'blue'
-		vertex.finish = time
-		time += 1
+		vertex.finish = self.time
+		self.time += 1
 		
 	def dfs(self, vertex):
-		global time
-		time = 1
+		self.time = 1
 		self._dfs(vertex)
 			
 g = Graph()
